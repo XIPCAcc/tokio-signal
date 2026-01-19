@@ -1,0 +1,10 @@
+[package]
+name = "tokio-signal"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+libc = "0.2.175"
+nix = { version = "0.28.0", features = ["process", "signal"] }
+tokio = { version = "1", features = ["signal", "rt-multi-thread"] }
